@@ -1,0 +1,22 @@
+# NOTE: install CPU-only PyTorch first on servers (see Dockerfile / render.yaml); Colab already has torch.
+fastapi>=0.110,<1.0
+uvicorn[standard]>=0.29
+python-multipart>=0.0.9
+pydantic>=2.6,<3
+pydantic-settings>=2.2
+
+pymupdf>=1.24
+sentence-transformers>=3.0
+faiss-cpu>=1.8
+rank-bm25>=0.2.2
+numpy>=1.26
+
+langchain-core>=0.3
+langchain-openai>=0.2
+langchain-text-splitters>=0.3
+openai>=1.40
+
+sqlalchemy>=2.0
+psycopg[binary]>=3.1
+boto3>=1.34
+python-dotenv>=1.0
