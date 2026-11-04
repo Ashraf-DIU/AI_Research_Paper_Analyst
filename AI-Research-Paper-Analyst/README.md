@@ -37,7 +37,7 @@ Tests: `cd backend && pip install -r requirements-dev.txt && pytest`
 4. **Vercel (frontend):** Add New -> Project -> import repo, Root Directory `frontend`, env `NEXT_PUBLIC_API_URL=<your Render URL>`. Deploy.
 5. **Connect:** set Render `FRONTEND_URL` to the Vercel domain (CORS), redeploy. Test `<render-url>/api/health` and `/docs`, then upload a PDF.
 6. Every `git push` to the connected branch redeploys both services.
-7. 
+   
 ## Known limits (MVP)
 - No user authentication yet; data is scoped by workspace id only. Add auth before exposing publicly with private data.
 - Background processing uses FastAPI BackgroundTasks (lost if the server restarts mid-job). Use Redis + RQ/Celery for production.
