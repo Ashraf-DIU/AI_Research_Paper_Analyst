@@ -8,7 +8,6 @@ from fastapi.testclient import TestClient  # noqa: E402
 
 from app.main import app  # noqa: E402
 
-
 def test_health_and_workspaces():
     with TestClient(app) as c:
         assert c.get("/api/health").json()["status"] == "healthy"
