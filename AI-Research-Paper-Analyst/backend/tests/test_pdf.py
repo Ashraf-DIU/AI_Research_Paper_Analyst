@@ -1,7 +1,6 @@
 from app.services.chunking_service import chunk_pages
 from app.utils.text_utils import clean_pages
 
-
 def _pages():
     pages = []
     for i in range(1, 6):
