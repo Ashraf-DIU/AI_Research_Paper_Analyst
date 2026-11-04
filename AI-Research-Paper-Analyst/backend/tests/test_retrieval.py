@@ -4,7 +4,6 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "ml" / "evaluation"))
 from retrieval_evaluation import score_question  # noqa: E402
 
-
 def test_metrics():
     results = [{"filename": "a.pdf", "page_start": 1, "page_end": 1},
                {"filename": "a.pdf", "page_start": 4, "page_end": 5}]
