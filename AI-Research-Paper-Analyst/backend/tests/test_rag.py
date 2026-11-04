@@ -1,6 +1,5 @@
 from app.utils.citation_utils import build_context, validate_citations
 
-
 def _chunk(i, page):
     return {"chunk_id": i, "paper_id": f"p{i}", "paper_title": f"Paper {i}", "filename": f"{i}.pdf",
             "page_start": page, "page_end": page, "section": "Results", "text": "x" * 50}
