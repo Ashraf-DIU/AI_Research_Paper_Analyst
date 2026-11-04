@@ -11,7 +11,6 @@ Next.js (Vercel) --HTTPS--> FastAPI (Render) --> PostgreSQL (metadata, chunks, a
                                   |--> BGE embeddings (local) + FAISS/BM25 retrieval
                                   '--> LLM (any OpenAI-compatible API)
 ```
-
 ## Run locally
 ```bash
 # backend
