@@ -1,4 +1,4 @@
-"""Rebuild FAISS index(es) from chunks stored in the database.  Usage: python scripts/rebuild_index.py [workspace_id]"""
+"""Rebuild FAISS index(es) from stored in the database.  Usage: python scripts/rebuild_index.py [workspace_id]"""
 import sys
 from pathlib import Path
 
